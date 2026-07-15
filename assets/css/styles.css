@@ -2711,9 +2711,25 @@ html { overflow-x: hidden; }
 }
 @media (max-width: 860px) {
   .chapter-image--social-pair {
-    min-height: 56vw;
+    aspect-ratio: unset;
+    overflow: visible;
+    background: var(--cream);
+    min-height: unset;
+    padding: 24px 16px 32px;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
     border-right: none;
     border-bottom: 1.5px solid rgba(46, 74, 102, 0.12);
+  }
+  .chapter-image--social-pair video {
+    width: calc(50% - 5px);
+    height: auto;
+    aspect-ratio: 9 / 16;
+    border-radius: 16px;
+    object-fit: cover;
+    background: #111;
+    flex-shrink: 0;
   }
 }
 
