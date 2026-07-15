@@ -2697,16 +2697,21 @@ html { overflow-x: hidden; }
 /* ── Homepage organic social: dual portrait video panel ── */
 .chapter-image--social-pair {
   display: flex;
-  gap: 3px;
-  background: #0a0a0e;
-  overflow: hidden;
-  border-right: 1.5px solid rgba(46, 74, 102, 0.12);
-  min-height: 37.5vw;
+  gap: 10px;
+  background: var(--cream);
+  overflow: visible;
+  border-right: none;
+  padding: 32px 24px;
+  justify-content: center;
+  align-items: flex-start;
 }
 .chapter-image--social-pair video {
-  width: 50%;
-  height: 100%;
+  width: calc(50% - 5px);
+  height: auto;
+  aspect-ratio: 9 / 16;
   object-fit: cover;
+  border-radius: 16px;
+  background: #111;
   flex-shrink: 0;
 }
 @media (max-width: 860px) {
@@ -2720,7 +2725,7 @@ html { overflow-x: hidden; }
     justify-content: center;
     align-items: flex-start;
     border-right: none;
-    border-bottom: 1.5px solid rgba(46, 74, 102, 0.12);
+    border-bottom: none;
   }
   .chapter-image--social-pair video {
     width: calc(50% - 5px);
