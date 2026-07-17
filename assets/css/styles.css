@@ -2153,6 +2153,7 @@ section { position: relative; }
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .results-scroll-card img,
 .results-scroll-card video {
@@ -2203,6 +2204,11 @@ section { position: relative; }
   z-index: 1;
 }
 .duo-badge--after { background: #3a7d44; }
+.duo-badge--right { left: auto; right: 8px; }
+.results-scroll-card .duo-badge { top: 28px; left: 28px; }
+.results-scroll-card .duo-badge--right { left: auto; right: 28px; }
+.results-scroll-card--center-badges .duo-badge { top: 50%; transform: translateY(-50%); left: 28px; }
+.results-scroll-card--center-badges .duo-badge--right { top: 50%; transform: translateY(-50%); left: auto; right: 28px; }
 
 @media (max-width: 768px) {
   .results-duo-grid { grid-template-columns: 1fr; }
