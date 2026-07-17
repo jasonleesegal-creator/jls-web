@@ -2207,8 +2207,8 @@ section { position: relative; }
 .duo-badge--right { left: auto; right: 8px; }
 .results-scroll-card .duo-badge { top: 28px; left: 28px; }
 .results-scroll-card .duo-badge--right { left: auto; right: 28px; }
-.results-scroll-card--center-badges .duo-badge { top: 50%; transform: translateY(-50%); left: 28px; }
-.results-scroll-card--center-badges .duo-badge--right { top: 50%; transform: translateY(-50%); left: auto; right: 28px; }
+.results-scroll-card--center-badges .duo-badge { top: 10px; transform: none; left: 20px; }
+.results-scroll-card--center-badges .duo-badge--right { top: 10px; transform: none; left: auto; right: 20px; }
 
 @media (max-width: 768px) {
   .results-duo-grid { grid-template-columns: 1fr; }
